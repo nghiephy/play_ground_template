@@ -7,6 +7,7 @@ html {
 *::after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -318,6 +319,121 @@ body {
 }
 .text-clamp--2 {
   -webkit-line-clamp: 2;
+}
+
+.partner {
+  margin-bottom: 10rem;
+}
+.partner__wrapper {
+  max-width: 83rem;
+  text-align: center;
+}
+.partner__title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 7rem;
+  margin-bottom: 7rem;
+  border-bottom: 1px solid currentColor;
+}
+.partner__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.connect {
+  text-align: center;
+  margin-bottom: 17rem;
+}
+.connect__title {
+  font-size: 2.5rem;
+  margin-bottom: 3.5rem;
+  font-weight: bold;
+}
+.connect__desc {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 6rem;
+}
+.connect__desc a {
+  color: #ffc87a;
+}
+.connect__list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.connect__item {
+  width: calc(25% - 22.5px);
+}
+
+.subscribe {
+  margin-bottom: 5rem;
+}
+.subscribe__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding-bottom: 8.5rem;
+  border-bottom: 4px solid #1a2b5f;
+}
+.subscribe__title {
+  font-size: 2.5rem;
+  max-width: 43rem;
+  font-weight: bold;
+}
+.subscribe__form {
+  min-width: 62rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background-color: #f2f1f6;
+  padding: 2rem;
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+.subscribe__input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  flex: 1;
+  font-size: 1.6rem;
+}
+.subscribe__btn {
+  cursor: pointer;
+  font-weight: bold;
+}
+.subscribe__socials i {
+  font-size: 2.5rem;
+  margin-left: 4rem;
+  cursor: pointer;
+}
+
+.footer {
+  margin-bottom: 10rem;
+}
+.footer__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.footer__link {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.footer__link a {
+  color: #1a2b5f;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

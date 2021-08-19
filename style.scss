@@ -24,6 +24,7 @@ html {
 *::after {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -320,5 +321,103 @@ body {
     text-overflow: ellipsis;
     &--2 {
         -webkit-line-clamp: 2;
+    }
+}
+
+.partner {
+    margin-bottom: 10rem;
+    &__wrapper {
+        max-width: 83rem;
+        text-align: center;
+    }
+    &__title {
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: 7rem;
+        margin-bottom: 7rem;
+        border-bottom: 1px solid currentColor;
+    }
+    &__list {
+        @include flex(center, space-between);
+    }
+}
+
+.connect {
+    text-align: center;
+    margin-bottom: 17rem;
+    &__title {
+        font-size: 2.5rem;
+        margin-bottom: 3.5rem;
+        font-weight: bold;
+    }
+    &__desc {
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-bottom: 6rem;
+        a {
+            color: $primary-color;
+        }
+    }
+    &__list {
+        @include flex(stretch, space-between);
+    }
+    &__item {
+        width: calc(25% - 22.5px);
+    }
+
+}
+
+.subscribe {
+    margin-bottom: 5rem;
+    &__wrapper {
+        @include flex(flex-start, space-between);
+        padding-bottom: 8.5rem;
+        border-bottom: 4px solid $text-color;
+    }
+    &__title {
+        font-size: 2.5rem;
+        max-width: 43rem;
+        font-weight: bold;
+    }
+    &__form {
+        min-width: 62rem;
+        @include flex(center, space-between);
+        background-color: #f2f1f6;
+        padding: 2rem;
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+    }
+    &__input {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        flex: 1;
+        font-size: 1.6rem;
+    }
+    &__btn {
+        cursor: pointer;
+        font-weight: bold;
+    }
+    &__socials {
+        i {
+            font-size: 2.5rem;
+            margin-left: 4rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.footer {
+    margin-bottom: 10rem;
+    &__wrapper {
+        @include flex(flex-start, space-between);
+    }
+    &__link {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        a {
+            color: $text-color;
+            font-weight: 500;
+        }
     }
 }
